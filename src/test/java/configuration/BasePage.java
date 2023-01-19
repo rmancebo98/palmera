@@ -21,9 +21,7 @@ public class BasePage {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
-//        System.setProperty("webdriver.chrome.driver","./src/test/java/drivers/chromedriver");
-//        driver = new ChromeDriver();
-        driver.get("https://www.banreservas.com/");
+        driver.get("https://www.bancentral.gov.do/SectorExterno/HistoricoTasas");
     }
 
     public WebDriver getDriver(){

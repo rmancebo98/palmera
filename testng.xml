@@ -4,9 +4,10 @@
     <test verbose="2" preserve-order="true" name="/Users/robertomancebo/Downloads/something">
         <classes>
             <class name="tests.SearchTests">
-                <methods><include name="loginAndAssertLandingPage"/>
+                <methods><include name="getDollarPrices"/>
                 </methods>
             </class>
         </classes>
     </test>
+
 </suite>

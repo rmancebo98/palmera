@@ -16,15 +16,15 @@ public class LandingPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "div > a.site-logo-a")
+    @FindBy(css = "img[class='logo-bc-header img img-responsive']")
     public WebElement homeLogo;
 
 
-    @FindBy(xpath = "//div[@class='site-header-panel container-fullsize-colored-dark']//span[contains(text(),'Compra')]")
+    @FindBy(css = "span#actualPurchaseValue")
     public WebElement dollarBuyPrice;
 
 
-    @FindBy(xpath = "//div[@class='site-header-panel container-fullsize-colored-dark']//span[contains(text(),'Venta')]")
+    @FindBy(css = "span#actualSellingValue")
     public WebElement dollarSellPrice;
 
 }

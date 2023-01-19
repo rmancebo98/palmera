@@ -9,9 +9,10 @@ public class SearchTests extends BasePage {
     LandingPageSteps landingPage;
 
     @Test
-    public void loginAndAssertLandingPage() {
+    public void getDollarPrices() {
         landingPage = new LandingPageSteps(getDriver());
 
+        landingPage.waitForPageToLoad();
         landingPage.getDollarBuyPrice();
         landingPage.getDollarSellPrice();
     }
