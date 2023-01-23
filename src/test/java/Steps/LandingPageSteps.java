@@ -1,5 +1,6 @@
 package Steps;
 
+import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.WebDriver;
 import pages.LandingPage;
 
@@ -17,15 +18,16 @@ public class LandingPageSteps extends LandingPage {
 
     public void waitForPageToLoad(){
         waitForElement(landingPage.homeLogo);
+        test.log(LogStatus.PASS, "Page loaded");
     }
 
     public void getDollarBuyPrice(){
-        logger.log(Level.FINE, "Dollar buy price is: " + dollarBuyPrice.getText());
         System.out.println("Dollar buy price is: " + dollarBuyPrice.getText());
+        test.log(LogStatus.PASS, "Dollar buy price collected");
     }
 
     public void getDollarSellPrice(){
-        logger.log(Level.FINE, "Dollar sell price is: " + dollarSellPrice.getText());
         System.out.println("Dollar sell price is: " + dollarSellPrice.getText());
+        test.log(LogStatus.PASS, "Dollar sell price collected");
     }
 }

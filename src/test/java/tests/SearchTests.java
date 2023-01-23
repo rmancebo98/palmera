@@ -11,6 +11,7 @@ public class SearchTests extends BasePage {
     @Test
     public void getDollarPrices() {
         landingPage = new LandingPageSteps(getDriver());
+        BasePage.test = BasePage.report.startTest("getDollar Prices");
 
         landingPage.waitForPageToLoad();
         landingPage.getDollarBuyPrice();
